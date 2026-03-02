@@ -187,11 +187,11 @@ passwords:
 2. Navigate to the `webapp` folder.
 
 3. Inspect the provided `Dockerfile` which serves as a set of instructions for Docker on building an image for the web application:
-    - Use the `maven:3.8.4-openjdk-17-slim` base image for the build stage.
+    - Use the `maven:3.9.9-eclipse-temurin-21-alpine` base image for the build stage.
     - Set working directories for both build and runtime stages.
     - Copy the `pom.xml` and the `src` directory to the build working directory.
     - Build the application by running the `mvn clean package` command.
-    - Use `openjdk:17-jdk` as the base image for the runtime stage.
+    - Use `eclipse-temurin:21-jre-alpine` as the base image for the runtime stage.
     - Define an argument to accept the JAR file name (`webapp-0.0.1-SNAPSHOT.jar`), and copy it from the build stage to the runtime working directory.
     - Expose the application's port (8080).
     - Start the Spring Boot application using the `java -jar` command.
@@ -200,7 +200,7 @@ passwords:
 
 5. Inspect the provided `ci_cd.yml` file which is a GitHub Actions workflow configuration file. It defines a CI/CD (Continuous Integration and Continuous Deployment) process that triggers on push events to the `master` branch. This process comprises several steps:
     - Check out the source code from the `master` branch.
-    - Set up Java 17 environment for the build.
+    - Set up Java 21 environment for the build.
     - Execute a Maven build, which includes updating snapshots and verifying the build.
     - Upload the Maven build artifact, which is a JAR file.
     - Log in to the Azure Container Registry that stores your Docker images.
