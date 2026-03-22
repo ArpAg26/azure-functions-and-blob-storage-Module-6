@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: orderitemsreserverservice
+server:
+  port: ${ORDERITEMSRESERVERSERVICE_SERVER_PORT:49714}
