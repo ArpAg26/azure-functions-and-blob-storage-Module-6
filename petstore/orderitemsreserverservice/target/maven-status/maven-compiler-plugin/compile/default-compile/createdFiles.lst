@@ -1,0 +1,8 @@
+com\chtrembl\petstore\order\items\model\Tag$TagBuilder.class
+com\chtrembl\petstore\order\items\model\Tag.class
+com\chtrembl\petstore\order\items\OrderItemsReserverApplication.class
+com\chtrembl\petstore\order\items\model\Category.class
+com\chtrembl\petstore\order\items\model\Product.class
+com\chtrembl\petstore\order\items\model\Category$CategoryBuilder.class
+com\chtrembl\petstore\order\items\functionapp\OrderItemsReserverFunction.class
+com\chtrembl\petstore\order\items\model\OrderItems.class

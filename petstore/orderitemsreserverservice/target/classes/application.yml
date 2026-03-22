@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: orderitemsreserverservice
+server:
+  port: ${ORDERITEMSRESERVERSERVICE_SERVER_PORT:53999}
+logging:
+  level:
+    root: INFO
+    com.chtrembl.petstore.order.items: INFO
+    com.azure.monitor.opentelemetry.autoconfigure.implementation.quickpulse.QuickPulsePingSender: ERROR
+    com.azure.core.http.netty.NettyAsyncHttpClient: ERROR
+petstore:
+  service:
+    orders:
+      items:
+        reserver:
+          url: ${ORDERITEMSRESERVERSERVICE_URL:http://localhost:53999}

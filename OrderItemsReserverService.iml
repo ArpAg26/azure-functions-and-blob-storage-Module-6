@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="azure" name="Azure">
+      <configuration>
+        <option name="dotAzurePath" value="C:\Users\arpit_agarwal\Projects\cloudx-java-azure-dev\module6\petstore\OrderItemsReserverService\.azure" />
+      </configuration>
+    </facet>
+  </component>
+</module>
