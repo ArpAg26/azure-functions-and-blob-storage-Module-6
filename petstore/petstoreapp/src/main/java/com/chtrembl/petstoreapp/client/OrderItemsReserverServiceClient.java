@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
         url = "${petstore.service.orders.items.reserver.url}"
 )
 public interface OrderItemsReserverServiceClient {
-    @PostMapping("/api/OrderItemsReserverFunction")
+    @PostMapping("/api/orderitemreservefunction")
     void retrieveOrderItems(@RequestBody Order orders, @RequestParam String containerName,
                             @RequestParam String sessionId);
 }

@@ -9,7 +9,7 @@ petstore:
     orders:
       items:
         reserver:
-          url: ${ORDERITEMSRESERVERSERVICE_URL:http://localhost:53999}
+          url: ${ORDERITEMSRESERVERSERVICE_URL:https://order-items-reserver-function-app.azurewebsites.net}
   security:
     # Enable in Module 10
     enabled: ${PETSTORE_SECURITY_ENABLED:false}
